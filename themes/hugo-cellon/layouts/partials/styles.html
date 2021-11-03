@@ -1,9 +1,10 @@
 <!--Vendor css-->
-<!--{{ $venoboxCss := resources.Get "vendor/venobox/venobox.css" }}-->
-{{ $owlCarouselCss := resources.Get "vendor/owl.carousel/assets/owl.carousel.min.css" }}
-<!--{{ $aosCss := resources.Get "vendor/aos/aos.css" }}-->
-{{ $vendorStyle := slice $owlCarouselCss | resources.Concat "styles_vendors.css" | resources.Fingerprint "md5"  }}
+{{ $owlCarousel := resources.Get "vendor/owl.carousel/assets/owl.carousel.min.css" }}
+{{ $niceSelect := resources.Get "vendor/jquery-nice-select/css/nice-select.css" }}
+{{ $magnificPopup := resources.Get "vendor/jquery-magnific-popup/magnific-popup.css" }}
+{{ $vendorStyle := slice $owlCarousel $niceSelect $magnificPopup | resources.Concat "styles_vendors.css" | resources.Fingerprint "md5"  }}
 <link rel="stylesheet" href="{{ $vendorStyle.RelPermalink }}" integrity="{{ $vendorStyle.Data.Integrity }}">
+<link rel="stylesheet" href="https://unpkg.com/@icon/linearicons/linearicons.css">
 
 <!--Custom and vendor sass-->
 {{ $main_options := (dict "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules")) }}

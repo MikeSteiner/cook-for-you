@@ -1,15 +1,24 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Favicon-->
+<link rel="shortcut icon" href="img/fav.png">
+{{ $logo := .Site.Params.logo }}
+<link href="{{ $logo.favicon }}" rel="icon">
+<link href="{{ $logo.appleTouchIcon }}" rel="apple-touch-icon">
+<!-- Author Meta -->
+<meta name="author" content="Colorlib">
+<!-- Meta Description -->
+<meta name="description" content="">
+<!-- Meta Keyword -->
+<meta name="keywords" content="">
+<!-- meta character set -->
+<meta charset="UTF-8">
 
+<!-- Site Title -->
 <title>Cook for you</title>
 
 <meta name="descriptions" content="Cook for you" />
 <meta name="keywords" content="Cook personal blog" />
-
-<!-- Favicons -->
-{{ $logo := .Site.Params.logo }}
-<link href="{{ $logo.favicon }}" rel="icon">
-<link href="{{ $logo.appleTouchIcon }}" rel="apple-touch-icon">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
