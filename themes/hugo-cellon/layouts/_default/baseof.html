@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{- partial "head.html" . -}}
+    </head>
+    <body>
+        <header id="header" {{ if ne .IsHome }} class="header-fixed"{{ end }}>
+            {{- partial "header.html" . -}}
+        </header>
+
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+
+        <footer id="footer">
+            {{- partial "footer.html" . -}}
+        </footer>
+
+        <!-- Include vendor and theme custom javascript -->
+        {{- partial "scripts.html" . -}}
+    </body>
+</html>

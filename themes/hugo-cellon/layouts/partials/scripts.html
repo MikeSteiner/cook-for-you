@@ -1,0 +1,17 @@
+<!--Vendor js imports mounted from the node_modules-->
+{{ $jquery := resources.Get "vendor/js/jquery.min.js" }}
+{{ $bootstrap_bundle := resources.Get "vendor/js/bootstrap.bundle.min.js" }}
+
+<!--Vendor js imports direct resource inside assets-->
+{{ $owl_carousel := resources.Get "vendor/owl.carousel/owl.carousel.min.js" -}}
+
+{{ $vendorsJs := slice $jquery $bootstrap_bundle $owl_carousel | resources.Concat "js/vendors_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}
+
+<!--Theme custom js imports-->
+{{ $main := resources.Get "js/main.js" }}
+
+{{ $mainJs := slice $main | resources.Concat "js/main_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}-->
+
+<script src="{{ $vendorsJs.RelPermalink }}"></script>
+<script src="{{ $mainJs.RelPermalink }}"></script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

@@ -1,0 +1,12 @@
+// Import bootstrap styles
+@import 'bootstrap/scss/bootstrap';
+@import './bootstrap_variables';
+
+// Import fontawesome
+$fa-font-path: "../webfonts";
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '@fortawesome/fontawesome-free/scss/solid.scss';
+@import '@fortawesome/fontawesome-free/scss/brands';
+
+// Import theme styles
+@import 'basic/basic';

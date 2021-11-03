@@ -1,0 +1,16 @@
+<!--Vendor css-->
+<!--{{ $venoboxCss := resources.Get "vendor/venobox/venobox.css" }}-->
+{{ $owlCarouselCss := resources.Get "vendor/owl.carousel/assets/owl.carousel.min.css" }}
+<!--{{ $aosCss := resources.Get "vendor/aos/aos.css" }}-->
+{{ $vendorStyle := slice $owlCarouselCss | resources.Concat "styles_vendors.css" | resources.Fingerprint "md5"  }}
+<link rel="stylesheet" href="{{ $vendorStyle.RelPermalink }}" integrity="{{ $vendorStyle.Data.Integrity }}">
+
+<!--Custom and vendor sass-->
+{{ $main_options := (dict "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
+{{ if eq hugo.Environment "development" -}}
+    {{ $main_options = merge $main_options (dict "outputStyle" "nested" "enableSourceMap" true) -}}
+{{ end -}}
+
+{{ $main_template := resources.Get "scss/main.scss" }}
+{{ $main_style := $main_template | resources.ToCSS $main_options | resources.Fingerprint "md5"}}
+<link rel="stylesheet" href="{{ $main_style.RelPermalink }}" integrity="{{ $main_style.Data.Integrity }}">

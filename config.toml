@@ -1,0 +1,45 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Cook for you'
+
+theme = "hugo-cellon"
+
+# Navigation
+[[menu.main]]
+    name = "Home"
+    label = "Начало"
+    weight = 10
+    url = "/index.html"
+    hasChildren = false
+[[menu.main]]
+    name = "Generic"
+    label = "Generic page"
+    weight = 20
+    url = "/#page"
+    hasChildren = false
+[[menu.main]]
+    name = "Elements"
+    label = "Elements"
+    weight = 30
+    url = "/#elements"
+    hasChildren = false
+
+# Module
+[module]
+  [module.hugoVersion]
+
+  [[module.mounts]]
+  source = "static"
+  target = "static"
+
+  [[module.mounts]]
+  source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+  target = "static/webfonts"
+
+  [[module.mounts]]
+  source = "node_modules/jquery/dist/jquery.min.js"
+  target = "assets/vendor/js/jquery.min.js"
+
+  [[module.mounts]]
+  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+  target = "assets/vendor/js/bootstrap.bundle.min.js"
