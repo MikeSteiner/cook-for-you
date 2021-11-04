@@ -47,3 +47,8 @@ theme = "hugo-cellon"
   [[module.mounts]]
   source = "node_modules/bootstrap/scss"
   target = "assets/scss/bootstrap"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
