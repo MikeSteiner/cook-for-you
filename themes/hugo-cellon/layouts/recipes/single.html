@@ -27,28 +27,30 @@
   </div>
 
   <main>
-    <section class="ingredients">
-      <ul class="unordered-list">
-        {{ range .Params.ingredients }}
-        <li>{{.}}</li>
-        {{ end }}
-      </ul>
-    </section>
+    <div class="row">
+      <section class="ingredients col-4">
+        <ul class="unordered-list">
+          {{ range .Params.ingredients }}
+          <li>{{.}}</li>
+          {{ end }}
+        </ul>
+      </section>
 
-    <section class="directions">
-      <ul class="ordered-list">
-        {{ range .Params.directions }}
-        <li>
-          <div>
-            <h5>{{ .title }}</h5>
-            <span>{{ .summary}}</span>
-          </div>
-        </li>
-        {{ end }}
-      </ul>
-    </section>
+      <section class="directions col-8">
+        <ul class="ordered-list">
+          {{ range .Params.directions }}
+          <li>
+            <div>
+              <h5>{{ .title }}</h5>
+              <span>{{ .summary}}</span>
+            </div>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+    </div>
 
-    <div>
+    <div class="row">
       {{ .Content }}
     </div>
   </main>
