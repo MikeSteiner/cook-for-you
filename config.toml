@@ -2,24 +2,24 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cook for you'
 
-theme = "hugo-cellon"
+theme = "cook-for-life"
 
 # Navigation
 [[menu.main]]
-    name = "Home"
+    name = "home"
     label = "Начало"
     weight = 10
     url = "/index.html"
     hasChildren = false
 [[menu.main]]
-    name = "Generic"
-    label = "Generic page"
+    name = "recipes"
+    label = "Рецепти"
     weight = 20
     url = "/#page"
     hasChildren = false
 [[menu.main]]
-    name = "Elements"
-    label = "Elements"
+    name = "about"
+    label = "За блога"
     weight = 30
     url = "/#elements"
     hasChildren = false
@@ -29,26 +29,25 @@ theme = "hugo-cellon"
   [module.hugoVersion]
 
   [[module.mounts]]
-  source = "static"
-  target = "static"
+    source = "static"
+    target = "static"
 
   [[module.mounts]]
-  source = "node_modules/@fortawesome/fontawesome-free/webfonts"
-  target = "static/webfonts"
+    source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/webfonts"
 
   [[module.mounts]]
-  source = "node_modules/jquery/dist/jquery.min.js"
-  target = "assets/vendor/js/jquery.min.js"
+    source = "node_modules/jquery/dist/jquery.min.js"
+    target = "assets/vendor/js/jquery.min.js"
 
   [[module.mounts]]
-  source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-  target = "assets/vendor/js/bootstrap.bundle.min.js"
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/vendor/js/bootstrap.bundle.min.js"
 
   [[module.mounts]]
-  source = "node_modules/bootstrap/scss"
-  target = "assets/scss/bootstrap"
+    source = "node_modules/bootstrap/scss"
+    target = "assets/scss/bootstrap"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+  [[module.mounts]]
+    source = "node_modules/owl.carousel/dist/owl.carousel.min.js"
+    target = "assets/vendor/js/owl.carousel.min.js"
