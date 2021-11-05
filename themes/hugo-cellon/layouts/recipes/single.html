@@ -1,0 +1,58 @@
+{{ define "main" }}
+<section class="recipe-section">
+  <header>
+    <h2>{{ .Title }}</h2>
+    <p>By {{ .Params.Author }}</p>
+    <p>Posted {{ .Date.Format "January 2, 2006" }}</p>
+    <span class="tags">
+      {{ range .Params.tags }}
+        <a class="genric-btn primary-border rounded small" href="/recipes/{{ . | urlize }}">{{ . }}</a>
+      {{ end }}
+    </span>
+  </header>
+
+  <!--  Gallery-->
+  <div>
+    <div class="row gallery-item">
+      {{ with .Resources.ByType "image" }}
+        {{ range . }}
+          <div class="col-md-4">
+            <a href="{{ .RelPermalink }}" class="img-pop-up" alt="">
+              <div class="single-gallery-image" style="background: url('{{ .RelPermalink }}');"></div>
+            </a>
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  <main>
+    <section class="ingredients">
+      <ul class="unordered-list">
+        {{ range .Params.ingredients }}
+        <li>{{.}}</li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <section class="directions">
+      <ul class="ordered-list">
+        {{ range .Params.directions }}
+        <li>
+          <div>
+            <h5>{{ .title }}</h5>
+            <span>{{ .summary}}</span>
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+
+    <div>
+      {{ .Content }}
+    </div>
+  </main>
+
+</section>
+
+{{ end }}
