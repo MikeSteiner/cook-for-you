@@ -1,6 +1,5 @@
-This is my personal cooking blog.
-
-On this site, you'll find
-
-* My family cooking inspiration
-* My recipes
+---
+title: This is my personal cooking blog
+draft: false
+description: Всички рецепти на Баба
+---

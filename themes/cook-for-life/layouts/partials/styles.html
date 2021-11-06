@@ -1,4 +1,14 @@
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
 <!--Vendor css-->
+{{ $animateCss := resources.Get "vendor/animate.css/animate.min.css" }}
+{{ $aosCss := resources.Get "vendor/aos/aos.css" }}
+{{ $boxiconsCss := resources.Get "vendor/boxicons/boxicons.min.css" }}
+{{ $glightboxCss := resources.Get "vendor/glightbox/css/glightbox.min.css" }}
+{{ $swiperBundleCss := resources.Get "vendor/swiper/swiper-bundle.min.css" }}
+{{ $vendorStyle := slice $animateCss $aosCss $boxiconsCss $glightboxCss $swiperBundleCss | resources.Concat "styles_vendors.css" | resources.Fingerprint "md5"  }}
+<link rel="stylesheet" href="{{ $vendorStyle.RelPermalink }}" integrity="{{ $vendorStyle.Data.Integrity }}">
 
 <!--Custom and vendor sass-->
 {{ $main_options := (dict "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules")) }}
