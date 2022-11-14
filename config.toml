@@ -2,7 +2,7 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cook for you'
 
-theme = "cook-for-life"
+theme = "cookbook"
 
 # Navigation
 [[menu.main]]
