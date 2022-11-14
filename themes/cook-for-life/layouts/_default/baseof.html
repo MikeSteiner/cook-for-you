@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{- partial "head.html" . -}}
+
+        <!-- Include all custom and vendor styles -->
+        {{- partialCached "styles.html" . -}}
+    </head>
+    <body>
+        {{- partial "header.html" . -}}
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+        <footer class="main-footer">
+            {{- partial "footer.html" . -}}
+        </footer>
+    </body>
+
+    <!-- Include vendor and theme custom javascript -->
+    {{- partial "scripts.html" . -}}
+</html>
