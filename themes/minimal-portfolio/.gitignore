@@ -1,0 +1,8 @@
+# IDE specific
+.idea/
+.vscode/
+
+# Node
+node_modules/
+public/
+resources/

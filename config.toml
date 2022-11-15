@@ -24,38 +24,19 @@ theme = "cookbook"
     url = "/#elements"
     hasChildren = false
 
-# Module
-[module]
-  [module.hugoVersion]
-
-  [[module.mounts]]
+# Mounts
+[[module.mounts]]
+    source = "images"
+    target = "content/uploads"
+[[module.mounts]]
     source = "static"
     target = "static"
-
-  [[module.mounts]]
+[[module.mounts]]
     source = "node_modules/@fortawesome/fontawesome-free/webfonts"
     target = "static/webfonts"
-
-  [[module.mounts]]
-    source = "node_modules/jquery/dist/jquery.min.js"
-    target = "assets/vendor/js/jquery.min.js"
-
-  [[module.mounts]]
-    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    target = "assets/vendor/js/bootstrap.bundle.min.js"
-
-  [[module.mounts]]
-    source = "node_modules/bootstrap/scss"
-    target = "assets/scss/bootstrap"
-
-  [[module.mounts]]
+[[module.mounts]]
     source = "node_modules/bootstrap-icons/font/fonts"
     target = "static/fonts"
-
-  [[module.mounts]]
-    source = "node_modules/boxicons/css"
-    target = "assets/vendor/boxicons"
-
-  [[module.mounts]]
-    source = "node_modules/boxicons/fonts"
-    target = "static/fonts"
+[[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/vendor/js/bootstrap.bundle.min.js"
