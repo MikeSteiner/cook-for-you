@@ -2,7 +2,14 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cook for you'
 
-theme = "cookbook"
+theme = "minimal-portfolio"
+
+# Logo
+[params.logo]
+    src = "bulgarian-kettlebells-logo.png"
+    alt = "Bulgarian Kettlebells website"
+    favicon = "/uploads/favicon.png"
+    appleTouchIcon = "/uploads/apple-touch-icon.png"
 
 # Navigation
 [[menu.main]]
@@ -29,8 +36,11 @@ theme = "cookbook"
     source = "images"
     target = "content/uploads"
 [[module.mounts]]
-    source = "static"
-    target = "static"
+    source = "assets"
+    target = "assets"
+[[module.mounts]]
+    source = "node_modules"
+    target = "assets/node_modules"
 [[module.mounts]]
     source = "node_modules/@fortawesome/fontawesome-free/webfonts"
     target = "static/webfonts"

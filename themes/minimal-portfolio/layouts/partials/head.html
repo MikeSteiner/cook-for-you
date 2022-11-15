@@ -1,0 +1,20 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="xh7Jb3TndNRGfhyFJKv_Ig8Lc7fhx0XEtcWMAAsKGqE" />
+{{ template "_internal/google_analytics.html" . }}
+
+{{ $page := .Page.Params }}
+<title>{{ $page.pageTitle }}</title>
+
+<meta name="title" content="{{ $page.pageTitle }}">
+<meta name="descriptison" content="{{ $page.metaDescription }}" />
+<meta name="keywords" content="{{ $page.metaKeywords }}" />
+<meta name="robots" content="index, follow, all">
+
+<!-- Favicons -->
+{{ $logo := .Site.Params.logo }}
+<link href="{{ $logo.favicon }}" rel="icon">
+<link href="{{ $logo.appleTouchIcon }}" rel="apple-touch-icon">
+
+
+
