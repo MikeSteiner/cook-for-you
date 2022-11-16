@@ -26,9 +26,9 @@
 {{ $bootstrapIcons := resources.Get "node_modules/bootstrap-icons/font/bootstrap-icons.scss" | resources.ToCSS }}
 <link rel="stylesheet" href="{{ $bootstrapIcons.RelPermalink }}" integrity="{{ $bootstrapIcons.Data.Integrity }}">
 
-<!-- Theme stylesheet-->
-{{ $theme := "css/style.default.css" }}
-<link rel="stylesheet" href="{{ $theme | relURL }}" id="theme-stylesheet">
+<!-- Minimal | Bootstrap portfolio template stylesheet-->
+{{ $minimalBootstrapPortfolioTemplate := "css/style.default.css" }}
+<link rel="stylesheet" href="{{ $minimalBootstrapPortfolioTemplate | relURL }}" id="theme-stylesheet">
 
 <!-- Custom/Project stylesheet-->
 {{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
