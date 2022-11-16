@@ -11,10 +11,35 @@
 <meta name="keywords" content="{{ $page.metaKeywords }}" />
 <meta name="robots" content="index, follow, all">
 
+<!-- gLightbox CSS-->
+{{ $glightbox := resources.Get "vendor/glightbox/css/glightbox.css" }}
+<link rel="stylesheet" href="{{ $glightbox.RelPermalink }}" integrity="{{ $glightbox.Data.Integrity }}">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+<!-- Bootstrap stylesheet-->
+{{ $bootstrap := resources.Get "scss/bootstrap.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}">
+
+<!-- Bootstrap Icons stylesheet-->
+{{ $bootstrapIcons := resources.Get "node_modules/bootstrap-icons/font/bootstrap-icons.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $bootstrapIcons.RelPermalink }}" integrity="{{ $bootstrapIcons.Data.Integrity }}">
+
+<!-- Theme stylesheet-->
+{{ $theme := "css/style.default.css" }}
+<link rel="stylesheet" href="{{ $theme | relURL }}" id="theme-stylesheet">
+
+<!-- Custom/Project stylesheet-->
+{{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
+
 <!-- Favicons -->
 {{ $logo := .Site.Params.logo }}
 <link href="{{ $logo.favicon }}" rel="icon">
 <link href="{{ $logo.appleTouchIcon }}" rel="apple-touch-icon">
+
+
 
 
 
