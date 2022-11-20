@@ -2,7 +2,7 @@
 title: "Крем супа от броколи"
 date: 2022-11-11T12:00:00-00:00
 draft: false
-layout: recipes
+type: recipes
 author: Alexander
 
 tags: ["Desserts"] #tags for your recipe

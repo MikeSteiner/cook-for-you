@@ -1,21 +1,17 @@
 {{ define "main" }}
 <main id="main">
-
     {{ partial "shared/sidebar.html" . }}
-
     <div class="page-holder">
         <!--  Navbar-->
         <div class="px-4 d-block d-lg-none">
-            {{ partial "shared/navbar-header.html" . }}
+         {{ partial "shared/navbar-header.html" . }}
         </div>
 
         <!--  Content-->
         <div class="px-4 py-5">
-            <div class="container-fluid">
-                <h1>DEFAULT List</h1>
-                <h2>{{ .Title }}</h2>
-                <p>{{ .Content }}</p>
-            </div>
+            <h2>{{ .Title }}</h2>
+            <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
+            <p>{{ .Content }}</p>
         </div>
 
         <!-- Footer-->

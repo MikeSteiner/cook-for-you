@@ -2,15 +2,11 @@
 <html>
     {{- partial "head.html" . -}}
 
-    <!-- Include Styles -->
-    {{- partialCached "styles.html" . -}}
-
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
             {{- block "main" . }}{{- end }}
         </div>
-        {{- partial "footer.html" . -}}
     </body>
 
     <!-- JavaScript files--> -->
