@@ -6,6 +6,7 @@ summary: "Никога няма да ми омръзнат броколите, �
 type: recipes
 author: Alexander
 
+categories: ["Soups"]
 tags: ["Soups"] #tags for your recipe
 
 servings: 12 #can be BLANK

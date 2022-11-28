@@ -5,6 +5,7 @@ draft: false
 type: recipes
 author: чичо Митко
 
+categories: ["Туршии"]
 tags: ["Туршии"] #tags for your recipe
 
 servings: #can be BLANK

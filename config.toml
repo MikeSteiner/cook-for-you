@@ -4,6 +4,10 @@ title = 'Cook for you'
 
 theme = "minimal-portfolio"
 
+[taxonomies]
+  tag = "tags"
+  category = "Categories"
+
 # Logo
 [params.logo]
     src = "bulgarian-kettlebells-logo.png"

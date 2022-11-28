@@ -4,7 +4,7 @@ date: 2020-01-01T12:40:44-05:00
 draft: false
 type: recipes
 author: Rummie
-
+categories: ["Desserts"]
 tags: ["Desserts"] #tags for your recipe
 
 servings: 12 #can be BLANK

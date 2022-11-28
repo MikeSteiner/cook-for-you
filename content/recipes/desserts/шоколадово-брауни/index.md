@@ -5,6 +5,7 @@ draft: false
 summary: "Моята интерпретация на десерта използва кестеново брашно и според мен само от него разликата във вкуса е невероятна, затова аз винаги използвам само и единствено него"
 type: recipes
 author: Надя Петрова
+categories: ["Desserts"]
 tags: ["Desserts"] #tags for your recipe
 
 servings: 12

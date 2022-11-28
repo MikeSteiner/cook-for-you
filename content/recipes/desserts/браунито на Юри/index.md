@@ -4,7 +4,7 @@ date: 2022-11-11T12:00:00-00:00
 draft: false
 type: recipes
 author: Alexander
-
+categories: ["Desserts"]
 tags: ["Desserts"] #tags for your recipe
 
 servings:  #can be BLANK
