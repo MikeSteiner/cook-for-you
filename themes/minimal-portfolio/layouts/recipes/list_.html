@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main id="main">
+
+    {{ partial "navigation/sidebar.html" . }}
+
+    <div class="page-holder">
+        <!--  Navbar-->
+        <div class="px-4 d-block d-lg-none">
+            {{ partial "navigation/navbar-header.html" . }}
+        </div>
+
+        <!--  Content-->
+        <div class="px-4 py-5">
+            <div class="container-fluid">
+                <h2>{{ .Title }}</h2>
+                <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
+                <p>{{ .Content }}</p>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        {{ partial "footer.html" . }}
+    </div>
+
+</main>
+{{ end }}

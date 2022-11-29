@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+
+    <body>
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+    </body>
+
+    <!-- JavaScript files--> -->
+    {{- partial "scripts.html" . -}}
+
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    {{ $fa := resources.Get "scss/fontawesome.scss" | resources.ToCSS }}
+    <link rel="stylesheet" href="{{ $fa.RelPermalink }}" integrity="{{ $fa.Data.Integrity }}">
+</html>

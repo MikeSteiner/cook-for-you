@@ -2,60 +2,72 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Cook for you'
 
-theme = "cookbook"
+theme = "minimal-portfolio"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Logo
+[params.logo]
+    src = "bulgarian-kettlebells-logo.png"
+    alt = "Bulgarian Kettlebells website"
+    favicon = "/uploads/favicon.png"
+    appleTouchIcon = "/uploads/apple-touch-icon.png"
 
 # Navigation
+sectionPagesMenu = "main"
+[menu]
 [[menu.main]]
-    name = "home"
-    label = "Начало"
+    identifier = 'home'
+    name = 'home'
+    url = '/'
     weight = 10
-    url = "/index.html"
-    hasChildren = false
 [[menu.main]]
-    name = "recipes"
-    label = "Рецепти"
+    identifier = 'about'
+    name = 'about'
+    url = '/about/'
+    weight = 100
+[[menu.main]]
+    identifier = "salats"
+    name = "Салати"
     weight = 20
-    url = "/#page"
+    url = "/salats/"
+[[menu.main]]
+    identifier = "desserts"
+    name = "Десерти"
+    weight = 30
+    url = "/desserts/"
     hasChildren = false
 [[menu.main]]
-    name = "about"
-    label = "За блога"
-    weight = 30
-    url = "/#elements"
+    identifier = "soups"
+    name = "Супи"
+    weight = 40
+    url = "/soups/"
+    hasChildren = false
+[[menu.main]]
+    identifier = "ferments"
+    name = "Туршии"
+    weight = 50
+    url = "/туршии/"
     hasChildren = false
 
-# Module
-[module]
-  [module.hugoVersion]
-
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-
-  [[module.mounts]]
+# Mounts
+[[module.mounts]]
+    source = "images"
+    target = "content/uploads"
+[[module.mounts]]
+    source = "assets"
+    target = "assets"
+[[module.mounts]]
+    source = "node_modules"
+    target = "assets/node_modules"
+[[module.mounts]]
     source = "node_modules/@fortawesome/fontawesome-free/webfonts"
     target = "static/webfonts"
-
-  [[module.mounts]]
-    source = "node_modules/jquery/dist/jquery.min.js"
-    target = "assets/vendor/js/jquery.min.js"
-
-  [[module.mounts]]
-    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-    target = "assets/vendor/js/bootstrap.bundle.min.js"
-
-  [[module.mounts]]
-    source = "node_modules/bootstrap/scss"
-    target = "assets/scss/bootstrap"
-
-  [[module.mounts]]
+[[module.mounts]]
     source = "node_modules/bootstrap-icons/font/fonts"
     target = "static/fonts"
-
-  [[module.mounts]]
-    source = "node_modules/boxicons/css"
-    target = "assets/vendor/boxicons"
-
-  [[module.mounts]]
-    source = "node_modules/boxicons/fonts"
-    target = "static/fonts"
+[[module.mounts]]
+    source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/vendor/js/bootstrap.bundle.min.js"
