@@ -1,0 +1,44 @@
+<!--Vendor js imports mounted from the node_modules-->
+{{ $bootstrap_bundle := resources.Get "vendor/js/bootstrap.bundle.min.js" }}
+{{ $nodeModuleJs := slice $bootstrap_bundle | resources.Concat "js/node_module_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}
+<script src="{{ $nodeModuleJs.RelPermalink }}"></script>
+
+<!--Vendor js imports direct resource inside assets-->
+{{ $glightbox := resources.Get "vendor/glightbox/js/glightbox.min.js" -}}
+{{ $masonryLayout := resources.Get "vendor/masonry-layout/masonry.pkgd.min.js" -}}
+{{ $imagesloaded := resources.Get "vendor/imagesloaded/imagesloaded.pkgd.min.js" -}}
+{{ $vendorsJs := slice $glightbox $masonryLayout $imagesloaded | resources.Concat "js/vendors_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}
+<script src="{{ $vendorsJs.RelPermalink }}"></script>
+
+<!--Theme custom js imports-->
+{{ $main := resources.Get "js/main.js" }}
+{{ $mainJs := slice $main | resources.Concat "js/main_bundle.js" | resources.Minify | resources.Fingerprint "md5" }}
+<script src="{{ $mainJs.RelPermalink }}"></script>
+
+<!--Netlify-->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+<script>
+    // ------------------------------------------------------- //
+    //   Inject SVG Sprite -
+    //   see more here
+    //   https://css-tricks.com/ajaxing-svg-sprite/
+    // ------------------------------------------------------ //
+    function injectSvgSprite(path) {
+
+        var ajax = new XMLHttpRequest();
+        ajax.open("GET", path, true);
+        ajax.send();
+        ajax.onload = function(e) {
+            var div = document.createElement("div");
+            div.className = 'd-none';
+            div.innerHTML = ajax.responseText;
+            document.body.insertBefore(div, document.body.childNodes[0]);
+        }
+    }
+    // this is set to BootstrapTemple website as you cannot
+    // inject local SVG sprite (using only 'icons/orion-svg-sprite.svg' path)
+    // while using file:// protocol
+    // pls don't forget to change to your domain :)
+    injectSvgSprite('https://bootstraptemple.com/files/icons/orion-svg-sprite.svg');
+</script>

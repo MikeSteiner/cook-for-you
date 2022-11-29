@@ -1,0 +1,45 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="xh7Jb3TndNRGfhyFJKv_Ig8Lc7fhx0XEtcWMAAsKGqE" />
+{{ template "_internal/google_analytics.html" . }}
+
+{{ $page := .Page.Params }}
+<title>{{ $page.pageTitle }}</title>
+
+<meta name="title" content="{{ $page.pageTitle }}">
+<meta name="descriptison" content="{{ $page.metaDescription }}" />
+<meta name="keywords" content="{{ $page.metaKeywords }}" />
+<meta name="robots" content="index, follow, all">
+
+<!-- gLightbox CSS-->
+{{ $glightbox := resources.Get "vendor/glightbox/css/glightbox.css" }}
+<link rel="stylesheet" href="{{ $glightbox.RelPermalink }}" integrity="{{ $glightbox.Data.Integrity }}">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+<!-- Bootstrap stylesheet-->
+{{ $bootstrap := resources.Get "scss/bootstrap.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}">
+
+<!-- Bootstrap Icons stylesheet-->
+{{ $bootstrapIcons := resources.Get "node_modules/bootstrap-icons/font/bootstrap-icons.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $bootstrapIcons.RelPermalink }}" integrity="{{ $bootstrapIcons.Data.Integrity }}">
+
+<!-- Minimal | Bootstrap portfolio template stylesheet-->
+{{ $minimalBootstrapPortfolioTemplate := "css/style.default.css" }}
+<link rel="stylesheet" href="{{ $minimalBootstrapPortfolioTemplate | relURL }}" id="theme-stylesheet">
+
+<!-- Custom/Project stylesheet-->
+{{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
+
+<!-- Favicons -->
+{{ $logo := .Site.Params.logo }}
+<link href="{{ $logo.favicon }}" rel="icon">
+<link href="{{ $logo.appleTouchIcon }}" rel="apple-touch-icon">
+
+
+
+
+

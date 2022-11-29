@@ -1,0 +1,17 @@
+/*--------------------------------------------------------------
+# Import theme styles
+--------------------------------------------------------------*/
+@import 'theme/variables';
+
+// Main styles
+@import "theme/general";
+@import "theme/header";
+@import "theme/footer";
+@import "theme/navigation";
+
+// Pages styles
+@import "theme/pages/about";
+@import "theme/pages/contacts";
+
+// Sections styles
+@import "theme/sections/breadcrumbs";
