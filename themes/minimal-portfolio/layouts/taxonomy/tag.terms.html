@@ -12,10 +12,11 @@
         <!--  Content-->
         <div class="px-4 py-5">
             <div class="container-fluid">
-                <h1>TAXONOMY List</h1>
+                <h1>TAGS All list</h1>
                 <h2>{{ .Title }}</h2>
                 <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
 
+                <hr>
                 <!-- Ranges through content/posts/*.md -->
                 {{ range .Pages.ByLastmod }}
                 <li>

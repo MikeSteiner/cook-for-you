@@ -12,16 +12,18 @@
         <!--  Content-->
         <div class="px-4 py-5">
             <div class="container-fluid">
-                <h1>TAXONOMY Single</h1>
+                <h1>TERMS All List</h1>
                 <h2>{{ .Title }}</h2>
                 <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
 
                 <!-- Ranges through content/posts/*.md -->
-                {{ range .Pages.ByLastmod }}
-                <li>
-                    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-                </li>
-                {{ end }}
+                <ul>
+                    {{ range .Pages.ByLastmod }}
+                    <li>
+                        <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                    </li>
+                    {{ end }}
+                </ul>
 
                 <p>{{ .Content }}</p>
             </div>

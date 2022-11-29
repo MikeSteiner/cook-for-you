@@ -7,7 +7,7 @@ type: recipes
 author: Alexander
 
 categories: ["Soups"]
-tags: ["Soups"] #tags for your recipe
+tags: ["Sweet", "Salty", "Health"] #tags for your recipe
 
 servings: 12 #can be BLANK
 cook_time: 45 #in minutes #can be BLANK

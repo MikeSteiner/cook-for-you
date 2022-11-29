@@ -1,0 +1,38 @@
+{{ define "main" }}
+<main id="main">
+
+    {{ partial "shared/sidebar.html" . }}
+
+    <div class="page-holder">
+        <!--  Navbar-->
+        <div class="px-4 d-block d-lg-none">
+            {{ partial "shared/navbar-header.html" . }}
+        </div>
+
+        <!--  Content-->
+        <div class="px-4 py-5">
+            <div class="container-fluid">
+                <h1>TAG Single list</h1>
+                <h2>{{ .Title }}</h2>
+                <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
+                
+                <hr>
+                <!-- Ranges through content/posts/*.md -->
+                {{ range .Pages.ByLastmod }}
+                <li>
+                    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                </li>
+                {{ end }}
+
+
+
+                <p>{{ .Content }}</p>
+            </div>
+        </div>
+
+        <!-- Footer-->
+        {{ partial "footer.html" . }}
+    </div>
+
+</main>
+{{ end }}

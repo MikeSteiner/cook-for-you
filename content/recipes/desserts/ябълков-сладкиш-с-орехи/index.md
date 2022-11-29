@@ -5,7 +5,7 @@ draft: false
 type: recipes
 author: Rummie
 categories: ["Desserts"]
-tags: ["Desserts"] #tags for your recipe
+tags: ["Sweet"] #tags for your recipe
 
 servings: 12 #can be BLANK
 cook_time: 45 #in minutes #can be BLANK

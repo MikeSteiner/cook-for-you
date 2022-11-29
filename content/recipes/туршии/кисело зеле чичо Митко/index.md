@@ -4,9 +4,8 @@ date: 2020-01-01T12:40:44-05:00
 draft: false
 type: recipes
 author: чичо Митко
-
 categories: ["Туршии"]
-tags: ["Туршии"] #tags for your recipe
+tags: ["Vegan", "Health", "Raw", "Salty"] #tags for your recipe
 
 servings: #can be BLANK
 cook_time: #in minutes #can be BLANK

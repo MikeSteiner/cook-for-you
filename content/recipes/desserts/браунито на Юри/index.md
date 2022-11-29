@@ -5,7 +5,7 @@ draft: false
 type: recipes
 author: Alexander
 categories: ["Desserts"]
-tags: ["Desserts"] #tags for your recipe
+tags: ["Sweet"] #tags for your recipe
 
 servings:  #can be BLANK
 cook_time:  #in minutes #can be BLANK

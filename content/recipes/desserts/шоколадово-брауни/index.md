@@ -6,7 +6,7 @@ summary: "Моята интерпретация на десерта използ
 type: recipes
 author: Надя Петрова
 categories: ["Desserts"]
-tags: ["Desserts"] #tags for your recipe
+tags: ["Sweet"] #tags for your recipe
 
 servings: 12
 cook_time: 45 #in minutes #can be BLANK
