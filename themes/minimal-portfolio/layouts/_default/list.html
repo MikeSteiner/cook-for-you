@@ -33,36 +33,7 @@
                 <div class="row gy-4 gx-5 masonry-wrapper">
                     {{ range .Pages }}
                     <div class="col-lg-4 col-md-6 grid-item">
-                        <div class="listing-item ps-0">
-                            <div class="position-relative">
-                                <ul class="list-inline listing-tags m-0">
-                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="detail.html">{{.Date.Format "2006-01-02"}}</a></li>
-                                </ul>
-                                <a class="reset-anchor d-block listing-img-holder" href="{{.Permalink}}">
-
-                                    {{ if isset .Params "images" }}
-                                        {{ range first 1 .Params.images }}
-                                             <img class="img-fluid rounded-lg" src="{{ .src }}" alt="{{ .alt }}"/>
-                                        {{ end }}
-                                    {{ else }}
-                                        <img class="img-fluid rounded-lg" src="/uploads/placeholder-no-image.png" alt="Haunted House"/>
-                                    {{ end }}
-
-                                    <p class="mb-0 text-primary small d-flex align-items-center listing-btn">
-                                        <span>Cook for You</span>
-                                        <svg class="svg-icon text-primary svg-icon-sm ms-1">
-                                            <use xlink:href="#arrow-right-1"> </use>
-                                        </svg>
-                                    </p>
-                                </a>
-                            </div>
-                            <div class="py-3">
-                                <a class="reset-anchor" href="{{.Permalink}}">
-                                    <h2 class="h5 listing-item-heading">{{.Title}}</h2>
-                                </a>
-                                <p class="text-sm mb-0 listing-item-description">{{.Summary}}</p>
-                            </div>
-                        </div>
+                        {{ partial "recipes/list-item-summary.html" . }}
                     </div>
                     {{ end }}
                 </div>

@@ -3,7 +3,7 @@ title: "Крем супа от броколи"
 date: 2020-01-01T12:40:44-05:00
 draft: false
 author: Alexander
-
+type: recipes
 categories: ["Soups"]
 tags: ["Sweet", "Salty", "Health"] #tags for your recipe
 

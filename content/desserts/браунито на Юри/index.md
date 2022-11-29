@@ -3,6 +3,7 @@ title: "Браунито на Юри"
 date: 2022-11-11T12:00:00-00:00
 draft: false
 author: Alexander
+type: recipes
 categories: ["Desserts"]
 tags: ["Sweet"] #tags for your recipe
 

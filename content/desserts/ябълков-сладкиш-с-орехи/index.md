@@ -3,6 +3,7 @@ title: "Ябълков сладкиш с орехи"
 date: 2020-01-01T12:40:44-05:00
 draft: false
 author: Rummie
+type: recipes
 categories: ["Desserts"]
 tags: ["Sweet"] #tags for your recipe
 
