@@ -6,7 +6,7 @@ theme = "minimal-portfolio"
 
 [taxonomies]
   tag = "tags"
-  category = "Categories"
+  category = "categories"
 
 # Logo
 [params.logo]
@@ -16,23 +16,40 @@ theme = "minimal-portfolio"
     appleTouchIcon = "/uploads/apple-touch-icon.png"
 
 # Navigation
+sectionPagesMenu = "main"
+[menu]
 [[menu.main]]
-    name = "home"
-    label = "Начало"
+    identifier = 'home'
+    name = 'home'
+    url = '/'
     weight = 10
-    url = "/index.html"
-    hasChildren = false
 [[menu.main]]
-    name = "recipes"
-    label = "Рецепти"
+    identifier = 'about'
+    name = 'about'
+    url = '/about/'
+    weight = 100
+[[menu.main]]
+    identifier = "salats"
+    name = "Салати"
     weight = 20
-    url = "/#page"
+    url = "/salats/"
+[[menu.main]]
+    identifier = "desserts"
+    name = "Десерти"
+    weight = 30
+    url = "/desserts/"
     hasChildren = false
 [[menu.main]]
-    name = "about"
-    label = "За блога"
-    weight = 30
-    url = "/#elements"
+    identifier = "soups"
+    name = "Супи"
+    weight = 40
+    url = "/soups/"
+    hasChildren = false
+[[menu.main]]
+    identifier = "ferments"
+    name = "Туршии"
+    weight = 50
+    url = "/туршии/"
     hasChildren = false
 
 # Mounts

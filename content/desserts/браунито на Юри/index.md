@@ -1,8 +1,7 @@
 ---
-title: "Крем супа от броколи"
+title: "Браунито на Юри"
 date: 2022-11-11T12:00:00-00:00
 draft: false
-type: recipes
 author: Alexander
 categories: ["Desserts"]
 tags: ["Sweet"] #tags for your recipe
@@ -11,6 +10,8 @@ servings:  #can be BLANK
 cook_time:  #in minutes #can be BLANK
 calories:  #in kcal #can be BLANK
 ---
+Браунито пък е фаворит всички, които посещават залата редовно и редко се задържа повече от час ;).
+<!--more-->
 ## Ingredients:
 - Захар 300 гр.
 - Какао 200 гр.

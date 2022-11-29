@@ -2,7 +2,6 @@
 title: "Ябълков сладкиш с орехи"
 date: 2020-01-01T12:40:44-05:00
 draft: false
-type: recipes
 author: Rummie
 categories: ["Desserts"]
 tags: ["Sweet"] #tags for your recipe
@@ -12,16 +11,15 @@ cook_time: 45 #in minutes #can be BLANK
 calories:  #in kcal #can be BLANK
 
 images:
-- image: /uploads/ябълков-сладкиш-с-орехи.jpg
-  thumbnail: /uploads/ябълков-сладкиш-с-орехи.jpg
+- src: /uploads/ябълков-сладкиш-с-орехи.jpg
   alt: ябълков сладкиш с орехи
-- image: /uploads/ябълков-сладкиш-с-орехи-1.jpg
+- src: /uploads/ябълков-сладкиш-с-орехи-1.jpg
   thumbnail: /uploads/ябълков-сладкиш-с-орехи-1.jpg
   alt: ябълков сладкиш с орехи
-- image: /uploads/ябълков-сладкиш-с-орехи-2.jpg
+- src: /uploads/ябълков-сладкиш-с-орехи-2.jpg
   thumbnail: /uploads/ябълков-сладкиш-с-орехи-2.jpg
   alt: ябълков сладкиш с орехи
-- image: /uploads/ябълков-сладкиш-с-орехи-3.jpg
+- src: /uploads/ябълков-сладкиш-с-орехи-3.jpg
   thumbnail: /uploads/ябълков-сладкиш-с-орехи-3.jpg
   alt: ябълков сладкиш с орехи
 ---

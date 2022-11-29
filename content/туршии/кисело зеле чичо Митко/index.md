@@ -1,8 +1,7 @@
 ---
-title: "кисело зеле по рецепта чичо Митко"
+title: "Кисело зеле по рецепта чичо Митко"
 date: 2020-01-01T12:40:44-05:00
 draft: false
-type: recipes
 author: чичо Митко
 categories: ["Туршии"]
 tags: ["Vegan", "Health", "Raw", "Salty"] #tags for your recipe
@@ -10,7 +9,13 @@ tags: ["Vegan", "Health", "Raw", "Salty"] #tags for your recipe
 servings: #can be BLANK
 cook_time: #in minutes #can be BLANK
 calories: #in kcal #can be BLANK
+
+images:
+- src: /uploads/кисело зеле чичо Митко-1.jpg
+  alt: кисело зеле в бидон
 ---
+Киселото зеле има право да се намира само на две места - в бидона или в чинията ви, средно положение няма.
+<!--more-->
 ## Ingredients:
 - Зелки по 10, 20 бр
 - Морска Сол 400 гр. на 10 л. вода
