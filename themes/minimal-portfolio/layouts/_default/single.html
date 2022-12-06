@@ -12,33 +12,135 @@
         <!--  Content-->
         <div class="px-4 py-5">
             <div class="container-fluid">
-                <h2>{{ .Title }}</h2>
-                <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
 
-                <section>
-                    <h4>Category:</h4>
-                    <ul class="">
-                        {{ range .Params.categories }}
-                        <li>
-                            <a href="/categories/{{ . | urlize }}">{{ . }}</a>
-                        </li>
+                <div class="row">
+                    <div class="col-lg-7">
+                        <h1>{{ .Title }}</h1>
+                        <p class="text-muted mb-5">{{ .Summary }}</p>
+                    </div>
+                </div>
+
+                <div class="row mb-5">
+
+                    <!-- Images-->
+                    <div class="col-lg-7">
+                        {{ range .Params.images }}
+                        <a class="glightbox product-view" href="{{ .src }}" data-gallery="gallery" data-glightbox="{{ .alt }}">
+                            <img class="img-fluid mb-4" src="{{ .src }}" alt="{{ .alt }}">
+                        </a>
                         {{ end }}
-                    </ul>
-                </section>
+                    </div>
 
-                <section>
-                    <h4>Tags:</h4>
-                    <ul class="">
-                        {{ range .Params.tags }}
-                        <li>
-                            <a href="/tags/{{ . | urlize }}">#{{ . }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </section>
+                    <!-- Content-->
+                    <div class="col-lg-5 position-sticky">
+                        <h2>{{ .Params.author }}</h2>
+                        <p class="text-muted">{{ .Description }}</p>
+                        <div class="p-4 bg-light mb-5">
+                            <ul class="list-unstyled mb-0">
 
-                <hr />
-                <p>{{ .Content }}</p>
+                                <!-- Category-->
+                                <li class="d-flex mb-2">
+                                    <h6 class="mb-0">Category:</h6>
+                                    {{ range .Params.categories }}
+                                    <!--  Todo Replace the p tag with li and add ul-->
+                                    <p class="ms-3 text-muted mb-0">
+                                        <a class="reset-anchor" href="/categories/{{ . | urlize }}">{{ . }}</a>
+                                    </p>
+                                    {{ end }}
+                                </li>
+
+                                <!-- Date-->
+                                <li class="d-flex mb-2">
+                                    <h6 class="mb-0">Date:</h6>
+                                    <p class="ms-3 text-muted mb-0">{{ .Date.Format "2006-01-02"}}</p>
+                                </li>
+
+                                <!-- Tags-->
+                                <li class="d-flex">
+                                    <h6 class="mb-0">Tags:</h6>
+                                    {{ range .Params.tags }}
+                                    <!--  Todo Replace the p tag with li and add ul-->
+                                    <p class="ms-3 text-muted mb-0">
+                                        <a class="reset-anchor me-1" href="/tags/{{ . | urlize }}">#{{ . }}</a>
+                                    </p>
+                                    {{ end }}
+                                </li>
+                            </ul>
+                        </div>
+                        <article >
+                            <p class="text-muted">
+                                {{ .Content }}
+                            </p>
+                        </article>
+
+                        <h2 class="h3 mb-4">Share</h2>
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a class="reset-anchor social-share-link facebook" href="#!"><i class="fab me-2 fa-facebook-f"></i>Share</a></li>
+                            <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#!"><i class="fab me-2 fa-twitter"></i>Tweet</a></li>
+                            <li class="list-inline-item"><a class="reset-anchor social-share-link instagram" href="#!"><i class="fab me-2 fa-instagram"></i>Share</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Related recipes-->
+                <h2 class="h3 mb-4">Related recipes</h2>
+                <div class="row gy-4 gx-5">
+                    <div class="col-lg-4">
+                        <div class="listing-item ps-0">
+                            <div class="position-relative">
+                                <ul class="list-inline listing-tags m-0">
+                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="detail.html">Creative</a></li>
+                                </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid rounded-lg" src="img/portfolio-6.jpg" alt="Banana Lady"/>
+                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
+                                        <use xlink:href="#arrow-right-1"> </use>
+                                    </svg>
+                                </p></a>
+                            </div>
+                            <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                <h2 class="h5 listing-item-heading">Banana Lady</h2></a>
+                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="listing-item ps-0">
+                            <div class="position-relative">
+                                <ul class="list-inline listing-tags m-0">
+                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="detail.html">Creative</a></li>
+                                </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid rounded-lg" src="img/portfolio-4.jpg" alt="Treasure Haunted"/>
+                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
+                                        <use xlink:href="#arrow-right-1"> </use>
+                                    </svg>
+                                </p></a>
+                            </div>
+                            <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                <h2 class="h5 listing-item-heading">Treasure Haunted</h2></a>
+                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="listing-item ps-0">
+                            <div class="position-relative">
+                                <ul class="list-inline listing-tags m-0">
+                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="detail.html">Creative</a></li>
+                                </ul><a class="reset-anchor d-block listing-img-holder" href="detail.html"><img class="img-fluid rounded-lg" src="img/portfolio-5.jpg" alt="Best Friends"/>
+                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
+                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
+                                        <use xlink:href="#arrow-right-1"> </use>
+                                    </svg>
+                                </p></a>
+                            </div>
+                            <div class="py-3"><a class="reset-anchor" href="detail.html">
+                                <h2 class="h5 listing-item-heading">Best Friends</h2></a>
+                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
