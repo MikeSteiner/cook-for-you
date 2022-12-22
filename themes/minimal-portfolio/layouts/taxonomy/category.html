@@ -12,9 +12,9 @@
         <!--  Content-->
         <div class="px-4 py-5">
             <div class="container-fluid">
-                <h1>CATEGORY Single list</h1>
-                <h2>{{ .Title }}</h2>
-                <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
+<!--                <h1>CATEGORY Single list</h1>-->
+                <h2>Всички рецепти в категория {{ .Title }}</h2>
+<!--                <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>-->
 
                 <hr>
                 <!-- Ranges through content/posts/*.md -->
@@ -23,8 +23,6 @@
                     <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
                 </li>
                 {{ end }}
-
-
 
                 <p>{{ .Content }}</p>
             </div>
