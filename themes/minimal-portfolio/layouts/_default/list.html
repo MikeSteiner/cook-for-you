@@ -13,30 +13,16 @@
         <div class="px-4 py-5">
             <div class="container-fluid">
                 <header>
-                    <h1>DEFAULT List</h1>
                     <h2>{{ .Title }}</h2>
-                    <h3>layout: {{ .Type }} {{ .Page.Kind }}</h3>
-
-                    <img class="img-fluid rounded-lg" src="{{ .Params.image.src }}" alt="{{ .Params.image.alt }}" width="500px">
                 </header>
 
-                <section>
-                    <ul class="">
-                        {{ range .Pages }}
-                        <li>
-                            <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </section>
-
-                <div class="row gy-4 gx-5 masonry-wrapper">
+                <section class="row gy-4 gx-5 masonry-wrapper">
                     {{ range .Pages }}
                     <div class="col-lg-4 col-md-6 grid-item">
                         {{ partial "recipes/list-item-summary.html" . }}
                     </div>
                     {{ end }}
-                </div>
+                </section>
             </div>
         </div>
 
