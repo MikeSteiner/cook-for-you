@@ -1,6 +1,7 @@
 # IDE specific
 .idea/
 .vscode/
+content/.obsidian/
 
 # Public
 public/
