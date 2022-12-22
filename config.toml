@@ -51,6 +51,12 @@ sectionPagesMenu = "main"
     weight = 50
     url = "/туршии/"
     hasChildren = false
+[[menu.main]]
+    identifier = "bakery"
+    name = "Печива"
+    weight = 60
+    url = "/bakery/"
+    hasChildren = false
 
 # Mounts
 [[module.mounts]]
