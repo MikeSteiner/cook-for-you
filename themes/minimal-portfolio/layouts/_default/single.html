@@ -75,8 +75,20 @@
 
                         <h2 class="h3 mb-4">Share</h2>
                         <ul class="list-inline">
-                            <li class="list-inline-item"><a class="reset-anchor social-share-link facebook" href="#!"><i class="fab me-2 fa-facebook-f"></i>Share</a></li>
-                            <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#!"><i class="fab me-2 fa-twitter"></i>Tweet</a></li>
+                            <!-- Facebook-->
+                            {{ $facebookShareBaseUrl := "https://www.facebook.com/sharer/sharer.phpu={pageUrl};src=sdkpreparse" }}
+                            {{ $href := $facebookShareBaseUrl }}
+                            {{ $href := replace $href "{pageUrl}" (urlquery .Permalink) }}
+
+                            {{ $href }}
+                            <li class="list-inline-item">
+                                <a class="reset-anchor social-share-link facebook"
+                                   href="{{ $href | safeURL }}"
+                                   target="_blank"
+                                ><i class="fab me-2 fa-facebook-f"></i>Share</a>
+                            </li>
+<!--                            <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#!"><i class="fab me-2 fa-twitter"></i>Tweet</a></li>-->
+                            <!-- Instagram-->
                             <li class="list-inline-item"><a class="reset-anchor social-share-link instagram" href="#!"><i class="fab me-2 fa-instagram"></i>Share</a></li>
                         </ul>
                     </div>

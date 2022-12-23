@@ -21,21 +21,19 @@ images:
 Wanting to eat the healthiest bread but don't know where to buy it or how to make it? 
 <!--more-->
 Try this healthy bread recipe that's not only nutritious, but also keto-friendly!
+
 ## Ingredients:
 
-### Dry Ingredients:
-1 cup almond flour
-1 cup arrowroot flour
-1/3 cup coconut flour
-1 tsp sea salt
-2 tsp active dry yeast
-1 ½ Tbsp very finely ground chia seeds
-2 Tbsp organic psyllium husk powder
-
-### Wet Ingredients:
-1 ¼ cup filtered water
-2 tsp maple syrup (This is consumed by the yeast, which lowers the glycemic index.)
-1 egg
+- 1 cup almond flour;
+- 1 cup arrowroot flour;
+- 1/3 cup coconut flour;
+- 1 tsp sea salt;
+- 2 tsp active dry yeast;
+- 1 ½ Tbsp very finely ground chia seeds;
+- 2 Tbsp organic psyllium husk powder;
+- 1 ¼ cup filtered water;
+- 2 tsp maple syrup (This is consumed by the yeast, which lowers the glycemic index.);
+- 1 egg.
 
 ## Directions:
 - Стъпка 1: In a large bowl, whisk together the almond flour, arrowroot flour, coconut flour, and sea salt.
