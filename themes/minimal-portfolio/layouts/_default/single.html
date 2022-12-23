@@ -91,7 +91,7 @@
                             <li class="list-inline-item">
                                 {{ $linkedinShareBaseUrl := "https://www.linkedin.com/shareArticle?mini=true&url={articleUrl}&title={articleTitle}" }}
                                 {{ $href := $linkedinShareBaseUrl }}
-                                {{ $href := replace $href "{articleUrl}" (urlquery "https://cook-for-you.netlify.app/bakery/healthiest-bread/") }}
+                                {{ $href := replace $href "{articleUrl}" (urlquery .Permalink) }}
                                 {{ $href := replace $href "{articleTitle}" (urlquery .Title) }}
                                 <a class="reset-anchor social-share-link linkedin"
                                    href="{{ $href }}"
