@@ -75,19 +75,33 @@
 
                         <h2 class="h3 mb-4">Share</h2>
                         <ul class="list-inline">
+
                             <!-- Facebook-->
-                            {{ $facebookShareBaseUrl := "https://www.facebook.com/sharer/sharer.php?u={pageUrl};src=sdkpreparse" }}
-                            {{ $href := $facebookShareBaseUrl }}
-                            {{ $href := replace $href "{pageUrl}" (urlquery .Permalink) }}
                             <li class="list-inline-item">
+                                {{ $facebookShareBaseUrl := "https://www.facebook.com/sharer/sharer.php?u={pageUrl};src=sdkpreparse" }}
+                                {{ $href := $facebookShareBaseUrl }}
+                                {{ $href := replace $href "{pageUrl}" (urlquery .Permalink) }}
                                 <a class="reset-anchor social-share-link facebook"
                                    href="{{ $href | safeURL }}"
                                    target="_blank"
                                 ><i class="fab me-2 fa-facebook-f"></i>Share</a>
                             </li>
-<!--                            <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#!"><i class="fab me-2 fa-twitter"></i>Tweet</a></li>-->
-                            <!-- Instagram-->
-                            <li class="list-inline-item"><a class="reset-anchor social-share-link instagram" href="#!"><i class="fab me-2 fa-instagram"></i>Share</a></li>
+
+                            <!-- Linkedin-->
+                            <li class="list-inline-item">
+                                {{ $linkedinShareBaseUrl := "https://www.linkedin.com/shareArticle?mini=true&url={articleUrl}&title={articleTitle}" }}
+                                {{ $href := $linkedinShareBaseUrl }}
+                                {{ $href := replace $href "{articleUrl}" (urlquery "https://cook-for-you.netlify.app/bakery/healthiest-bread/") }}
+                                {{ $href := replace $href "{articleTitle}" (urlquery .Title) }}
+                                <a class="reset-anchor social-share-link linkedin"
+                                   href="{{ $href }}"
+                                   target="_blank"
+                                ><i class="fab me-2 fa-instagram"></i>Share</a>
+                            </li>
+
+                            <!-- Tweeter-->
+                            <!-- <li class="list-inline-item"><a class="reset-anchor social-share-link twitter" href="#!"><i class="fab me-2 fa-twitter"></i>Tweet</a></li>-->
+
                         </ul>
                     </div>
                 </div>
