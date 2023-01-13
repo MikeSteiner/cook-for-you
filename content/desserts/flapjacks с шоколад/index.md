@@ -1,0 +1,37 @@
+---
+title: "Flapjacks с шоколад"
+date: "2023-01-13T08:00:00+02:00"
+draft: false
+author: Alexander
+type: recipes
+categories: ["Desserts"]
+tags: ["Sweet"] #tags for your recipe
+
+servings:  #can be BLANK
+cook_time:  #in minutes #can be BLANK
+calories:  #in kcal #can be BLANK
+
+images:
+- src: /uploads/chocolate-flapjacks-1.jpg
+  alt: Flapjacks с шоколад
+- src: /uploads/chocolate-flapjacks-ingredients.jpg
+  alt: Flapjacks с шоколад съставки
+- src: /uploads/chocolate-flapjacks-process.jpg
+  alt: Flapjacks с приготвяне
+---
+След тренировка, сутрин или преди лягане. Можете да хапнете този вкусен флапджак по всяко време от деня, със повод или без.
+<!--more-->
+## Ingredients:
+- Краве масло - 200 г
+- Златен сироп - 150 мл
+- Овесени ядки - 450 гр
+- Кафява захар - 75 гр
+- Мед 3 с.л.
+- Сушени плодове кайсии, стафиди - 125 гр.
+- Шоколад - 200 гр.
+
+## Directions:
+- ***Стъпка 1***: Разтопете маслото със златния сироп.
+- ***Стъпка 2***: Махнете от огъня и смесете с овесените ядки, захарта и плодовете. Разбъркайте много добре.
+- ***Стъпка 3***: Изсипете сместа в предварително намазана правоъгълна форма за печене. Изпечете в загрята на 190 градуса фурна за 25-30 минути.
+- ***Стъпка 4***: Разтопете шоколада на водна баня, намажете отгоре десерта и го оставете да се охлади;
