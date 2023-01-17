@@ -14,9 +14,13 @@ calories:  #in kcal #can be BLANK
 images:
 - src: /uploads/chocolate-flapjacks-1.jpg
   alt: Flapjacks с шоколад
-- src: /uploads/chocolate-flapjacks-ingredients.jpg
+- src: /uploads/chocolate-flapjacks-2.jpg
   alt: Flapjacks с шоколад съставки
-- src: /uploads/chocolate-flapjacks-process.jpg
+- src: /uploads/chocolate-flapjacks-3.jpg
+  alt: Flapjacks с приготвяне
+- src: /uploads/chocolate-flapjacks-4.jpg
+  alt: Flapjacks с приготвяне
+- src: /uploads/chocolate-flapjacks-5.jpg
   alt: Flapjacks с приготвяне
 ---
 След тренировка, сутрин или преди лягане. Можете да хапнете този вкусен флапджак по всяко време от деня, със повод или без.
