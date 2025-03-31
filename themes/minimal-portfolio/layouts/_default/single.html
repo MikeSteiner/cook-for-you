@@ -106,66 +106,67 @@
                     </div>
                 </div>
 
+                <!-- TODO: Make the related recipes work and uncomment-->
                 <!-- Related recipes-->
-                <h2 class="h3 mb-4">Related recipes</h2>
-                <div class="row gy-4 gx-5">
-                    {{ range .Params.categories }}
-                    <div class="col-lg-4">
-                        <div class="listing-item ps-0">
-                            <div class="position-relative">
-                                <ul class="list-inline listing-tags m-0">
-                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>
-                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-6.jpg" alt="Banana Lady"/>
-                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
-                                        <use xlink:href="#arrow-right-1"> </use>
-                                    </svg>
-                                </p></a>
-                            </div>
-                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">
-                                <h2 class="h5 listing-item-heading">Banana Lady</h2></a>
-                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="listing-item ps-0">
-                            <div class="position-relative">
-                                <ul class="list-inline listing-tags m-0">
-                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>
-                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-4.jpg" alt="Treasure Haunted"/>
-                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
-                                        <use xlink:href="#arrow-right-1"> </use>
-                                    </svg>
-                                </p></a>
-                            </div>
-                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">
-                                <h2 class="h5 listing-item-heading">Treasure Haunted</h2></a>
-                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="listing-item ps-0">
-                            <div class="position-relative">
-                                <ul class="list-inline listing-tags m-0">
-                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>
-                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-5.jpg" alt="Best Friends"/>
-                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>
-                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">
-                                        <use xlink:href="#arrow-right-1"> </use>
-                                    </svg>
-                                </p></a>
-                            </div>
-                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">
-                                <h2 class="h5 listing-item-heading">Best Friends</h2></a>
-                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                            </div>
-                        </div>
-                    </div>
-                    {{ end }}
-                </div>
+<!--                <h2 class="h3 mb-4">Related recipes</h2>-->
+<!--                <div class="row gy-4 gx-5">-->
+<!--                    {{ range .Params.categories }}-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="listing-item ps-0">-->
+<!--                            <div class="position-relative">-->
+<!--                                <ul class="list-inline listing-tags m-0">-->
+<!--                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>-->
+<!--                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-6.jpg" alt="Banana Lady"/>-->
+<!--                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>-->
+<!--                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">-->
+<!--                                        <use xlink:href="#arrow-right-1"> </use>-->
+<!--                                    </svg>-->
+<!--                                </p></a>-->
+<!--                            </div>-->
+<!--                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">-->
+<!--                                <h2 class="h5 listing-item-heading">Banana Lady</h2></a>-->
+<!--                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="listing-item ps-0">-->
+<!--                            <div class="position-relative">-->
+<!--                                <ul class="list-inline listing-tags m-0">-->
+<!--                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>-->
+<!--                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-4.jpg" alt="Treasure Haunted"/>-->
+<!--                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>-->
+<!--                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">-->
+<!--                                        <use xlink:href="#arrow-right-1"> </use>-->
+<!--                                    </svg>-->
+<!--                                </p></a>-->
+<!--                            </div>-->
+<!--                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">-->
+<!--                                <h2 class="h5 listing-item-heading">Treasure Haunted</h2></a>-->
+<!--                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-4">-->
+<!--                        <div class="listing-item ps-0">-->
+<!--                            <div class="position-relative">-->
+<!--                                <ul class="list-inline listing-tags m-0">-->
+<!--                                    <li class="list-inline-item"><a class="reset-anchor fw-normal text-gray text-sm" href="/categories/{{ . | urlize }}">Creative</a></li>-->
+<!--                                </ul><a class="reset-anchor d-block listing-img-holder" href="/categories/{{ . | urlize }}"><img class="img-fluid rounded-lg" src="/img/portfolio-5.jpg" alt="Best Friends"/>-->
+<!--                                <p class="mb-0 text-primary small d-flex align-items-center listing-btn"> <span>Look inside</span>-->
+<!--                                    <svg class="svg-icon text-primary svg-icon-sm ms-1">-->
+<!--                                        <use xlink:href="#arrow-right-1"> </use>-->
+<!--                                    </svg>-->
+<!--                                </p></a>-->
+<!--                            </div>-->
+<!--                            <div class="py-3"><a class="reset-anchor" href="/categories/{{ . | urlize }}">-->
+<!--                                <h2 class="h5 listing-item-heading">Best Friends</h2></a>-->
+<!--                                <p class="text-sm mb-0 listing-item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    {{ end }}-->
+<!--                </div>-->
 
             </div>
         </div>
