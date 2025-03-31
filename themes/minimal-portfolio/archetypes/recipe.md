@@ -20,14 +20,14 @@ Summary goes up to this more comment.
 <!--more-->
 And the description comes after
 
-## Ingredients:
+## Съставки:
 - Ingredient one
 - Ingredient two
 - Ingredient three
 
-## Directions:
+## Стъпки на приготвяне:
 - ***Стъпка 1:***
 - ***Стъпка 2:***
 - ***Стъпка 3:***
 
-## Footnotes
+## Бележки под черта:

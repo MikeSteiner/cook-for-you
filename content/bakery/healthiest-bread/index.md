@@ -22,7 +22,7 @@ Wanting to eat the healthiest bread but don't know where to buy it or how to mak
 <!--more-->
 Try this healthy bread recipe that's not only nutritious, but also keto-friendly!
 
-## Ingredients:
+## Съставки:
 
 - 1 cup almond flour;
 - 1 cup arrowroot flour;
@@ -35,7 +35,7 @@ Try this healthy bread recipe that's not only nutritious, but also keto-friendly
 - 2 tsp maple syrup (This is consumed by the yeast, which lowers the glycemic index.);
 - 1 egg.
 
-## Directions:
+## Стъпки на приготвяне:
 - Стъпка 1: In a large bowl, whisk together the almond flour, arrowroot flour, coconut flour, and sea salt.
 - Стъпка 2: Heat water at 105-110 °F. Add 2 tsp of maple syrup and stir. Add the yeast and let the mixture stand for 10 minutes. The yeast should bubble or foam. If it doesn’t, start all over again;
 - Стъпка 3: Stir the finely ground chia and psyllium powder into the yeast mixture. Let it stand for 1 minute to thicken, then whisk.
@@ -46,7 +46,7 @@ Try this healthy bread recipe that's not only nutritious, but also keto-friendly
 - Стъпка 8: Slide the prepared dough onto the preheated stone or cooking sheet. Bake for 35-40 minutes. Please note that baking time can vary; the measure of doneness is an internal temperature of 205-210 °F
 - Стъпка 9: Let your baked goodies cool completely on a wire rack. (Not allowing the loaf to fully cool before cutting may result in a gummy interior.) Once completely cooled, slice and serve, or store in an airtight container. To re-crisp crust, toast or reheat at 375 °F for 5-10 minutes.
 
-## Footnotes
+## Бележки под черта:
 You can't call this grain bread or wheat bread because the ingredients do not include grain products like wheat and whole-grain flour. Whole grains, and even refined grains, can cause bloating to people.
 
 This healthy bread recipe is nutritious and safe for you compared with the loaf of bread you’re used to eating. The slices of bread you can have with this recipe make a healthy replacement to your multi-grain bread or whole-wheat bread dishes.
