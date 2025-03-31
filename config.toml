@@ -29,10 +29,10 @@ sectionPagesMenu = "main"
     url = '/about/'
     weight = 100
 [[menu.main]]
-    identifier = "salats"
+    identifier = "salads"
     name = "Салати"
     weight = 20
-    url = "/salats/"
+    url = "/salads/"
 [[menu.main]]
     identifier = "desserts"
     name = "Десерти"
