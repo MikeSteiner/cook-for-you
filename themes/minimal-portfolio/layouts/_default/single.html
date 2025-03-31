@@ -78,7 +78,7 @@
 
                             <!-- Facebook-->
                             <li class="list-inline-item">
-                                {{ $facebookShareBaseUrl := "https://www.facebook.com/sharer/sharer.php?u={pageUrl};src=sdkpreparse" }}
+                                {{ $facebookShareBaseUrl := "https://www.facebook.com/sharer/sharer.php?u={pageUrl};" }}
                                 {{ $href := $facebookShareBaseUrl }}
                                 {{ $href := replace $href "{pageUrl}" (urlquery .Permalink) }}
                                 <a class="reset-anchor social-share-link facebook"
