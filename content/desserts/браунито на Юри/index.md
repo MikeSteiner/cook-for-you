@@ -6,10 +6,12 @@ author: Alexander
 type: recipes
 categories: ["Desserts"]
 tags: ["Sweet"] #tags for your recipe
-
 servings:  #can be BLANK
 cook_time:  #in minutes #can be BLANK
 calories:  #in kcal #can be BLANK
+images:
+- src: /uploads/браунито-на-юри.webp
+alt: Браунито на Юри
 ---
 Браунито пък е фаворит всички, които посещават залата редовно и редко се задържа повече от час ;).
 <!--more-->
