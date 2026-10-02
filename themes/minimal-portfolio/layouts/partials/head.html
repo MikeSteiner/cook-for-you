@@ -28,11 +28,11 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
 
 <!-- Bootstrap stylesheet-->
-{{ $bootstrap := resources.Get "scss/bootstrap.scss" | resources.ToCSS }}
+{{ $bootstrap := resources.Get "scss/bootstrap.scss" | css.Sass }}
 <link rel="stylesheet" href="{{ $bootstrap.RelPermalink }}" integrity="{{ $bootstrap.Data.Integrity }}">
 
 <!-- Bootstrap Icons stylesheet-->
-{{ $bootstrapIcons := resources.Get "node_modules/bootstrap-icons/font/bootstrap-icons.scss" | resources.ToCSS }}
+{{ $bootstrapIcons := resources.Get "node_modules/bootstrap-icons/font/bootstrap-icons.scss" | css.Sass }}
 <link rel="stylesheet" href="{{ $bootstrapIcons.RelPermalink }}" integrity="{{ $bootstrapIcons.Data.Integrity }}">
 
 <!-- Minimal | Bootstrap portfolio template stylesheet-->
@@ -40,7 +40,7 @@
 <link rel="stylesheet" href="{{ $minimalBootstrapPortfolioTemplate | relURL }}" id="theme-stylesheet">
 
 <!-- Custom/Project stylesheet-->
-{{ $main := resources.Get "scss/main.scss" | resources.ToCSS }}
+{{ $main := resources.Get "scss/main.scss" | css.Sass }}
 <link rel="stylesheet" href="{{ $main.RelPermalink }}" integrity="{{ $main.Data.Integrity }}">
 
 <!-- Favicons -->
